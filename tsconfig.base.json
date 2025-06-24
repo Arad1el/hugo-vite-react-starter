@@ -1,9 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "jsx": "preserve",
-    "jsxFactory": "h",
-    "jsxFragmentFactory": "Fragment",
+    "jsx": "react-jsx",
     "moduleResolution": "Node",
     "target": "es2016",
     "module": "ESNext",

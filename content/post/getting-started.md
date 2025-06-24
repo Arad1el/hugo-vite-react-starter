@@ -105,3 +105,21 @@ Test:
 ```
 yarn dev
 ```
+
+Adding React
+Add js folder into assets folder
+In assets folder, replace jsconfig.json (generated) with tsconfig.json
+```
+{
+    "extends": "../tsconfig.base.json",
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "baseUrl": ".",
+        "paths": {
+            "js/*": [
+                "js/*"
+            ]
+        },
+    }
+}
+```
