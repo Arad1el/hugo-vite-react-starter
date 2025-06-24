@@ -1,0 +1,29 @@
+{
+  "name": "hugo-vite-react-starter",
+  "version": "1.0.0",
+  "description": "A starter template for using Vite, Hugo & React together",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build:hugo && run-p dev:**",
+    "dev:vite": "vite --host",
+    "dev:hugo-watch": "onchange 'content/**/*.md' 'config.toml' 'layouts/**/*' -- npm run build:hugo",
+    "build": "yarn build:hugo && yarn build:vite",
+    "build:hugo": "hugo -d public",
+    "build:vite": "vite build"
+  },
+  "author": "Joe Dowland",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.4",
+    "@vitejs/plugin-react": "^4.6.0",
+    "onchange": "^7.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sass": "^1.89.2",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0",
+    "vite-hugo-plugin": "^5.1.0",
+    "vite-preset-react": "^2.3.0",
+    "yarn-run-all": "^3.1.1"
+  }
+}
