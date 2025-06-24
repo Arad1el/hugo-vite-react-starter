@@ -6,3 +6,5 @@ menu = 'main'
 +++
 
 This is the page with an alerter on it
+<script type="module" src="/assets/js/app2.tsx"></script>
+<div id="root"></div>
