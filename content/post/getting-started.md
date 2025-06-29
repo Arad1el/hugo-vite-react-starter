@@ -102,7 +102,7 @@ Add tsconfig.base.json to the root:
       "js/*": [
         "/*"
       ]
-    },
+    }
   }
 }
 ```
