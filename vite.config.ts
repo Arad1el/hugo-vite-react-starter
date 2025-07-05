@@ -22,7 +22,7 @@ export default defineConfig({
         rollupOptions: {
             output: {
                 entryFileNames: 'assets/[hash].js',
-                dir: "public"
+                dir: hugoOutDir
             }
         }
     }    
